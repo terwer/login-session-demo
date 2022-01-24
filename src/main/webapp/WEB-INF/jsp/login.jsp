@@ -13,6 +13,8 @@
 <body>
     <h1>Session:${pageContext.session.id}</h1>
 
+    <p>${sessionScope.failMsg}</p>
+
     <form action="/login/login" method="post">
         <input type="text" name="username"><br/>
         <input type="password" name="password"><br/>
