@@ -15,7 +15,7 @@
 
     <p>${sessionScope.failMsg}</p>
 
-    <form action="/login/login" method="post">
+    <form action="<%=request.getContextPath()%>/login/login" method="post">
         <input type="text" name="username"><br/>
         <input type="password" name="password"><br/>
         <input type="submit" value="登录">
