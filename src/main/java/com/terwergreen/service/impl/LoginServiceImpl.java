@@ -27,14 +27,10 @@ public class LoginServiceImpl implements LoginService {
     public boolean doLogin(String username, String password) {
         logger.info("开始处理登录");
 
-
         User user = new User();
         user.setUsername(username);
         user.setPassword(password);
-        // User result = session.selectOne("findByCondition", user);
-
-        UserMapper userMapper = session.getMapper(UserMapper.class);
-        User result = userMapper.findByCondition(user);
+        User result = session.selectOne("findByCondition", user);
 
         if (null != result) {
             logger.info("用户信息校验成功");
