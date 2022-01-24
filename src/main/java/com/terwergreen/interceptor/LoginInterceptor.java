@@ -32,10 +32,12 @@ public class LoginInterceptor implements HandlerInterceptor {
         Object username = session.getAttribute(Constant.SESSION_USERNAME_KEY);
         if (null == username) {
             logger.info("未登录或者登录失效");
+            session.setAttribute( Constant.SESSION_LOGIN_FAIL_MSG_KEY, Constant.SESSION_LOGIN_FAIL_MSG);
             response.sendRedirect(request.getContextPath() + "/login/toLogin");
             return false;
         }
 
+        session.setAttribute( Constant.SESSION_LOGIN_FAIL_MSG_KEY, "");
         logger.info("从Session中获取的登录名：" + username);
         return true;
     }
