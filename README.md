@@ -14,6 +14,8 @@ https://github.com/terwer/login-session-demo/blob/master/src/main/resources/appl
 
 版本8.5.73
 
+https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.73/bin/apache-tomcat-8.5.73.tar.gz
+
 ## 8080
 https://github.com/terwer/login-session-demo/blob/master/config/tomcat8080/server.xml
 
