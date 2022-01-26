@@ -2,7 +2,7 @@
 Spring Boot一致性Session实例
 
 # war包
-https://gitee.com/youweics/login-session-demo/war/logindemo.war
+https://gitee.com/youweics/login-session-demo/blob/master/war/logindemo.war
 
 # sql脚本
 https://gitee.com/youweics/login-session-demo/blob/master/config/user.sql
@@ -41,4 +41,12 @@ https://download.redis.io/releases/redis-6.2.6.tar.gz
 https://gitee.com/youweics/login-session-demo/blob/master/config/redis.conf
 
 https://github.com/terwer/login-session-demo/blob/master/src/main/resources/application.properties
+
+# 测试url
+
+如果是本地部署可以访问
+
+http://127.0.0.1:8081/logindemo/login/toLogin
+
+否则把127.0.0.1换成服务器ip即可
 
